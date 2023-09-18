@@ -14,7 +14,7 @@ const newPathname=updateSearchParams("limit",newLimit.toString())
 router.push(newPathname)
     }
   return (
-    <div className='w-full flex-center gap-5 flex mt-10'>
+    <div className='w-full  flex-center gap-5 flex mt-10'>
 {!isNext && (
     <CustomButton
     title='Show More'
