@@ -19,13 +19,15 @@ function CarCard({ car }: CarCardProps) {
     }
     const { city_mpg, combination_mpg, highway_mpg, year, make, transmission, drive, model } = car
 
-    const defaultStyles1 = {
+    const defaultStyles1:React.CSSProperties  = {
         position: "relative",
         objectFit: "contain",
         margin: "12pxx 0 12px 0",
         height: "10rem",
         width: "100%"
     }
+
+  
     return (
         <div className='car-card group'>
             <div className='car-card__content'>

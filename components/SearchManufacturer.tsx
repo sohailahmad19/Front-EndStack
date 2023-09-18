@@ -28,7 +28,7 @@ function SearchManufacturer({ manufacturer, setManufacturer }: SearchManufacture
 
                     <Combobox.Input className="search-manufacturer__input"
                         placeholder='Search a Car'
-                        displayValue={(manufacturer) => manufacturer}
+                        displayValue={(manufacturer:string) => manufacturer}
                         onChange={(e) => setQuery(e.target.value)}
                     />
 

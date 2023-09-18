@@ -8,11 +8,14 @@ import { generateCarImageUrl } from '@/utils';
 
 
 interface CarDetailsProps {
-    isOpen: Boolean;
+    isOpen: boolean;
     closeModal: () => void;
     car: CarProps
 }
+
+
 function CarDetail({ isOpen, closeModal, car }: CarDetailsProps) {
+
     return (
         <>
             <Transition appear show={isOpen} as={Fragment}>
