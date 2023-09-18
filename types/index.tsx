@@ -6,7 +6,7 @@ export interface CustomButtonProps {
   containerStyles?: string;
   textStyles?: string;
   title: string;
-   rightIcon?: string;
+  rightIcon?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
@@ -44,6 +44,14 @@ export interface CustomFilterProps {
 }
 
 export interface ShowMoreProps {
-  pageNumber :number,
-  isNext:boolean
+  pageNumber: number,
+  isNext: boolean
+}
+
+export interface SearchParamsProps {
+  manufacturer:string,
+  year:string,
+  model:string,
+  limit:number,
+  fuel:string
 }

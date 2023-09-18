@@ -1,11 +1,11 @@
-import { CarProps } from "@/types";
+import { CarProps, SearchParamsProps } from "@/types";
 
 const headers = {
     'X-RapidAPI-Key': '0472b42992msh107559997a563c1p15ce2cjsnb3684d61c0c5',
     'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com'
 }
 
-export async function fetchCars(searchParams) {
+export async function fetchCars(searchParams:SearchParamsProps) {
     const { manufacturer, year, model, limit, fuel } = searchParams;
     console.log(fuel)
 
